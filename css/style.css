@@ -24,3 +24,6 @@ label { width: 180px;
             }
 
 textarea { width: 360px; height: 50px}
+
+label:hover { font-size:25px }
+input:hover { font-size:25px }
