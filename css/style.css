@@ -1,0 +1,26 @@
+fieldset { background: lightyellow;
+          border: 10px solid yellow;
+          margin-bottom: 10px;
+          width: 720px
+          }
+
+label { width: 180px;
+        display: inline-block;
+        text-align: right;
+        vertical-align: text-top
+      }
+
+.radio_check { width: auto }
+
+.range_bad { width: 80px;
+             text-align: center;
+             background: red;
+             color: white
+            }
+.range_good { width: 80px;
+              text-align: center;
+              background: purple;
+              color: white
+            }
+
+textarea { width: 360px; height: 50px}

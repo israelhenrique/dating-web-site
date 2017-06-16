@@ -3,6 +3,7 @@
   <head>
 
     <title>Dating Web Site</title>
+    <link href=css/style.css rel="stylesheet" type="text/css" />
 
   </head>
 
@@ -17,7 +18,7 @@
         </legend>
         <label for="picture">Your image:</label><input type="file" id="picture" name="picture" required/>
         <br />
-        Image preview: <img id="preview" />
+        <label>Image preview:</label> <img id="preview" />
       </fieldset>
       <fieldset>
         <legend>
@@ -28,9 +29,9 @@
         <br />
         <label for="gender">Gender:</label>
         <input type="radio" id="male" name="gender" value="m" required/>
-        <label for="male">Male</label>
+        <label class="radio_check" for="male">Male</label>
         <input type="radio" id="female" name="gender" value="f" required/>
-        <label for="female">Female</label>
+        <label class="radio_check" for="female">Female</label>
         <br />
         <label for="age">Age:</label>
         <input type="number" name="age" required/>
@@ -68,14 +69,14 @@
           Your indicators
         </legend>
         <label for="height">Height:</label>
-        Short
+        <label class="range_bad">Short</label>
         <input type="range" name="height" min="0" max="100" value="50" step="5" />
-        Tall
+        <label class="range_good">Tall</label>
         <br />
         <label for="height">Salary:</label>
-        Poor
+        <label class="range_bad">Poor</label>
         <input type="range" name="salary" min="0" max="100" value="50" step="5" />
-        Ruch
+        <label class="range_good">Ruch</label>
       </fieldset>
 
       <fieldset>
@@ -93,11 +94,11 @@
         <br />
         <label for="contactMethod">Method to contact you:</label>
         <input type="checkbox" id="email" name="contactMethod" value="email"/>
-        <label for="email">Email</label>
+        <label class="radio_check" for="email">Email</label>
         <input type="checkbox" id="whatsapp" name="contactMethod" value="whatsapp" />
-        <label for="whatsapp">Whatsapp</label>
+        <label class="radio_check" for="whatsapp">Whatsapp</label>
         <input type="checkbox" id="chat" name="contactMethod" value="chat" />
-        <label for="chat">Chat</label>
+        <label class="radio_check"f or="chat">Chat</label>
 
       </fieldset>
 
