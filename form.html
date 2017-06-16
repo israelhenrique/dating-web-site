@@ -10,6 +10,101 @@
 
     <h1>Please Enter Your Details For Our Dating Website!</h1>
 
+    <form>
+      <fieldset>
+        <legend>
+          Your Face
+        </legend>
+        <label for="picture">Your image:</label><input type="file" id="picture" name="picture" required/>
+        <br />
+        Image preview: <img id="preview" />
+      </fieldset>
+      <fieldset>
+        <legend>
+          Your General Details
+        </legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required/>
+        <br />
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="m" required/>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="f" required/>
+        <label for="female">Female</label>
+        <br />
+        <label for="age">Age:</label>
+        <input type="number" name="age" required/>
+        <br />
+        <label for="dateBirth">Date of Birth:</label>
+        <input type="date" name="dateBirth" />
+        <br />
+        <label for="favoriteColor">Favorite color:</label>
+        <input type="color" name="favoriteColor" />
+        <br />
+        <label for="country">Which country</label>
+        <select name="country">
+          <option>
+          </option>
+          <option value="brazil">
+            Brazil
+          </option>
+          <option value="usa">
+            USA
+          </option>
+          <option value="japan">
+            Japan
+          </option>
+          <option value="china">
+            China
+          </option>
+          <option value="italy">
+            Italy
+          </option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Your indicators
+        </legend>
+        <label for="height">Height:</label>
+        Short
+        <input type="range" name="height" min="0" max="100" value="50" step="5" />
+        Tall
+        <br />
+        <label for="height">Salary:</label>
+        Poor
+        <input type="range" name="salary" min="0" max="100" value="50" step="5" />
+        Ruch
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Your Contact Information
+        </legend>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required/>
+        <br />
+        <label for="tel">Mobile:</label>
+        <input type="tel" name="tel" />
+        <br />
+        <label for="address">Address:</label>
+        <textarea name="address"></textarea>
+        <br />
+        <label for="contactMethod">Method to contact you:</label>
+        <input type="checkbox" id="email" name="contactMethod" value="email"/>
+        <label for="email">Email</label>
+        <input type="checkbox" id="whatsapp" name="contactMethod" value="whatsapp" />
+        <label for="whatsapp">Whatsapp</label>
+        <input type="checkbox" id="chat" name="contactMethod" value="chat" />
+        <label for="chat">Chat</label>
+
+      </fieldset>
+
+      <input type="submit" />
+
+    </form>
+
   </body>
 
 </html>
